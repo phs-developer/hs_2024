@@ -761,6 +761,16 @@ section.active .group-title::after {
   -webkit-transition: stroke 0.3s;
   transition: stroke 0.3s;
 }
+@media (max-width: 1024px) {
+  #sc-work .work-list .work-item .info-group .content2 {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  #sc-work .work-list .work-item .info-group {
+    padding: 1.25rem 0 0;
+  }
+}
 #sc-work .work-list .work-item:nth-child(1) {
   border: none;
 }

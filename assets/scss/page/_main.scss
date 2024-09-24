@@ -195,6 +195,12 @@
                             }
                         }
                     }
+                    @include tablet() {
+                        margin-top: 3rem;
+                    }
+                }
+                @include tablet() {
+                    padding: 1.25rem 0 0;
                 }
             }
             &:nth-child(1) {
