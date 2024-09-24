@@ -1,0 +1,31 @@
+//한글
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+//영어
+@font-face {
+    font-family: "ABCFavorit";
+    font-weight: 400;
+    src: url("../font/ABCFavorit-Regular.woff") format(woff);
+}
+
+@font-face {
+    font-family: "ABCFavorit";
+    font-weight: 700;
+    src: url("../font/ABCFavorit-Bold.woff") format(woff);
+}
+
+@font-face {
+    font-family: "Aeoniik";
+    font-weight: 300;
+    src: url("../font/Aeonik-Light.b970a5ba.woff2") format(woff2);
+}
+@font-face {
+    font-family: "Aeoniik";
+    font-weight: 400;
+    src: url("../font/Aeonik-Regular.e07e9c8f.woff2") format(woff2);
+}
+@font-face {
+    font-family: "Aeoniik";
+    font-weight: 500;
+    src: url("../font/Aeonik-Medium.907edaaa.woff2") format(woff2);
+}

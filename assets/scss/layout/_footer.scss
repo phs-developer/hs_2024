@@ -1,0 +1,57 @@
+#footer {
+    .inner {
+        margin: 0 7vw;
+        @include mobile() {
+            margin: 0 2vw;
+        }
+    }
+    .link-wrap {
+        padding: 1.8vw 0;
+        border-top: var(--border);
+        .link {
+            display: flex;
+            justify-content: space-between;
+            &:hover {
+                .text {
+                    color: var(--ThirdColor);
+                    transform: translateX(10%);
+                }
+                .arrow {
+                    opacity: 1;
+                    transform: translateX(-10%);
+                    path {
+                        stroke: var(--ThirdColor);
+                    }
+                }
+            }
+            .text {
+                text-transform: uppercase;
+                font-size: 2vw;
+                font-size: clamp(4.2rem, 5vw, 8.4rem);
+                line-height: 1;
+                transition: transform 0.4s;
+                @include pc() {
+                    font-size: 8vw;
+                }
+                @include tablet() {
+                    padding: 2.5vw;
+                    font-size: 9vw;
+                }
+            }
+            .arrow {
+                width: 20%;
+                transition: opacity 0.3s, transform 0.4s;
+                path {
+                    transition: stroke 0.3s;
+                }
+            }
+        }
+    }
+    .copy {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 0.85rem;
+        margin-top: 150px;
+    }
+}

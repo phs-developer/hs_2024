@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2024 Portfolio</title>
+        <!-- og -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://phs-developer.github.io/hs_2024/" />
+        <meta property="og:title" content="박희순, 2024 포트폴리오" />
+        <meta property="og:image" content="https://phs-developer.github.io/hs_2024/assets/images/og_img.png" />
+        <meta property="og:description" content="박희순 퍼블리셔 포트폴리오입니다." />
+        <meta property="og:site_name" content="2024 Portfolio" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/images/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="./assets/js/index.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#wrap">P.</a>
+                </h1>
+                <div class="short-cut">
+                    <button type="button" class="line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="blind">메뉴 열기</span>
+                    </button>
+                    <nav class="gnb pc">
+                        <ul class="gnb-list">
+                            <li class="gnb-item">
+                                <a href="#sc-about">About</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#sc-work">Work</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#footer">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="gnb mo">
+                        <ul class="gnb-list">
+                            <li class="gnb-item">
+                                <a href="#sc-about">About</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#sc-work">Work</a>
+                            </li>
+                            <li class="gnb-item">
+                                <a href="#footer">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="wrap">
+            <div class="fixed">
+                <span class="left1">Made Great by the Good Ideas</span>
+                <span class="right1">Craft Design</span>
+                <div class="left2">
+                    <span>Creative<br />Works</span>
+                </div>
+                <span class="right2">
+                    <a href="">
+                        <span class="blind">벨로그</span>
+                    </a>
+                    <a href="#wrap" role="button">
+                        <span class="blind">맨 위로</span>
+                    </a>
+                </span>
+            </div>
+            <main id="main">
+                <section id="sc-intro">
+                    <div class="inner">
+                        <h2 class="title">
+                            <svg
+                                preserveAspectRatio="xMidYMin slice"
+                                viewBox="0 0 105 97"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="smile"
+                            >
+                                <path
+                                    fill="#000"
+                                    stroke="#000"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m95.862 27.732-8.577-8.577-4.107 3.396c-.837-.063-1.693-.1-2.576-.1-18.958 0-43.205 15.37-54.159 34.336-3.587 6.22-5.29 12.038-5.308 17.073l-4.061 3.36 8.586 8.586c3.37 3.369 8.541 5.318 15.288 5.318 18.957 0 43.205-15.37 54.158-34.337 7.057-12.219 6.866-22.954.765-29.036l-.009-.019Z"
+                                ></path>
+                                <path
+                                    fill="#ff9b50"
+                                    stroke="#000"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15.588 75.512c-8.573-11.397.809-32.92 20.955-48.074 20.146-15.154 43.427-18.199 52-6.802 8.573 11.398-.81 32.921-20.955 48.075-20.146 15.153-43.427 18.198-52 6.801Z"
+                                ></path>
+                                <path
+                                    fill="#000"
+                                    d="M44.265 46.593c-1.075-.69.124-4.478 2.678-8.46 2.554-3.984 5.497-6.655 6.572-5.965 1.075.69-.124 4.478-2.678 8.461-2.555 3.983-5.497 6.654-6.572 5.964ZM60.657 46.599c-1.076-.69.123-4.478 2.678-8.461 2.554-3.983 5.496-6.654 6.572-5.964 1.075.69-.124 4.477-2.678 8.46-2.555 3.984-5.497 6.654-6.572 5.965Z"
+                                ></path>
+                                <path
+                                    stroke="#000"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M72.762 48.074C66.16 59.5 51.546 68.77 40.119 68.77s-15.342-9.27-8.75-20.696"
+                                ></path>
+                            </svg>
+                            <span class="text">Welcome to My</span>
+                            <span class="text">Journey</span>
+                            <span class="text">in Publishing</span>
+                        </h2>
+                    </div>
+                </section>
+                <section id="sc-work">
+                    <div class="inner">
+                        <div class="group-title">
+                            <h2 class="title">MY WORK</h2>
+                        </div>
+                        <ul class="work-list">
+                            <li class="work-item">
+                                <a href="https://phs-developer.github.io/purerang/" target="_blank">
+                                    <div class="img-group">
+                                        <video
+                                            src="./assets/images/pure.mp4"
+                                            autoplay
+                                            muted
+                                            loop
+                                            playsinline
+                                            poster="./assets/images/pure_poster.jpg"
+                                            class="img"
+                                        ></video>
+                                    </div>
+                                    <div class="info-group">
+                                        <div class="content1">
+                                            <h3 class="title">Purerang</h3>
+                                            <p class="desc">
+                                                Gsap과 ScrollTrigger를 사용하여 인터랙티브하게 제작된 PC 적응형
+                                                사이트입니다.
+                                            </p>
+                                        </div>
+                                        <div class="content2">
+                                            <div class="tag-box">
+                                                <span class="tag">#Interactive</span>
+                                                <span class="tag">#Gsap</span>
+                                                <span class="tag">#ScrollTrigger</span>
+                                            </div>
+                                            <button type="button" class="btn">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="40"
+                                                    height="40"
+                                                    viewBox="0 0 40 40"
+                                                    class="icon"
+                                                >
+                                                    <path
+                                                        d="M14.5107 25.48L24.9217 15.0691"
+                                                        stroke-linecap="square"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                    <path
+                                                        d="M14.5107 14.522H25.4696V25.4809"
+                                                        stroke-linecap="square"
+                                                    ></path>
+                                                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item">
+                                <a href="https://phs-developer.github.io/enterpriseblockchain/" target="_blank">
+                                    <div class="img-group">
+                                        <video
+                                            src="./assets/images/enter.mp4"
+                                            autoplay
+                                            muted
+                                            loop
+                                            playsinline
+                                            poster="./assets/images/enter_poster.jpg"
+                                            class="img"
+                                        ></video>
+                                    </div>
+                                    <div class="info-group">
+                                        <div class="content1">
+                                            <h3 class="title">Enterprise Blockchain</h3>
+                                            <p class="desc">
+                                                ScrollTrigger를 통한 퍼포먼스에 초점을 둔 클론코딩 사이트
+                                            </p>
+                                        </div>
+                                        <div class="content2">
+                                            <div class="tag-box">
+                                                <span class="tag">#Interactive</span>
+                                                <span class="tag">#Gsap</span>
+                                                <span class="tag kr">#시멘틱웹</span>
+                                            </div>
+                                            <button type="button" class="btn">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="40"
+                                                    height="40"
+                                                    viewBox="0 0 40 40"
+                                                    class="icon"
+                                                >
+                                                    <path
+                                                        d="M14.5107 25.48L24.9217 15.0691"
+                                                        stroke-linecap="square"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                    <path
+                                                        d="M14.5107 14.522H25.4696V25.4809"
+                                                        stroke-linecap="square"
+                                                    ></path>
+                                                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item">
+                                <a href="https://phs-developer.github.io/gentlemonster/" target="_blank">
+                                    <div class="img-group">
+                                        <video
+                                            src="./assets/images/gm.mp4"
+                                            autoplay
+                                            muted
+                                            loop
+                                            playsinline
+                                            poster="./assets/images/gm_poster.png"
+                                            class="img"
+                                        ></video>
+                                    </div>
+                                    <div class="info-group">
+                                        <div class="content1">
+                                            <h3 class="title">Gentle Monster</h3>
+                                            <p class="desc">
+                                                부드러운 상호작용을 통해 몰입감을 높히도록 리뉴얼한 사이트
+                                            </p>
+                                        </div>
+                                        <div class="content2">
+                                            <div class="tag-box">
+                                                <span class="tag">#Renewal</span>
+                                                <span class="tag">#Gsap</span>
+                                                <span class="tag">#Scss</span>
+                                            </div>
+                                            <button type="button" class="btn">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="40"
+                                                    height="40"
+                                                    viewBox="0 0 40 40"
+                                                    class="icon"
+                                                >
+                                                    <path
+                                                        d="M14.5107 25.48L24.9217 15.0691"
+                                                        stroke-linecap="square"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                    <path
+                                                        d="M14.5107 14.522H25.4696V25.4809"
+                                                        stroke-linecap="square"
+                                                    ></path>
+                                                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item">
+                                <a href="https://phs-developer.github.io/aim/" target="_blank">
+                                    <div class="img-group">
+                                        <img src="./assets/images/aim.jpg" alt class="img" />
+                                    </div>
+                                    <div class="info-group">
+                                        <div class="content1">
+                                            <h3 class="title">AIM</h3>
+                                            <p class="desc">
+                                                Lottie를 사용해 생동감있는 인터랙션 구현에 초점을 맞춘 반응형 사이트
+                                            </p>
+                                        </div>
+                                        <div class="content2">
+                                            <div class="tag-box">
+                                                <span class="tag">#Responsive</span>
+                                                <span class="tag">#Lottie</span>
+                                                <span class="tag">#Gsap</span>
+                                            </div>
+                                            <button type="button" class="btn">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="40"
+                                                    height="40"
+                                                    viewBox="0 0 40 40"
+                                                    class="icon"
+                                                >
+                                                    <path
+                                                        d="M14.5107 25.48L24.9217 15.0691"
+                                                        stroke-linecap="square"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                    <path
+                                                        d="M14.5107 14.522H25.4696V25.4809"
+                                                        stroke-linecap="square"
+                                                    ></path>
+                                                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item">
+                                <a href="https://phs-developer.github.io/oneulplus/" target="_blank">
+                                    <div class="img-group">
+                                        <img src="./assets/images/on.jpg" alt class="img" />
+                                    </div>
+                                    <div class="info-group">
+                                        <div class="content1">
+                                            <h3 class="title">오늘 플러스</h3>
+                                            <p class="desc">
+                                                JSON 데이터를 async/awiat과 Fetch를 통해 연결한 PC/MO 일체형 사이트
+                                            </p>
+                                        </div>
+                                        <div class="content2">
+                                            <div class="tag-box">
+                                                <span class="tag kr">#일체형</span>
+                                                <span class="tag kr">#비동기 통신</span>
+                                                <span class="tag">#Json</span>
+                                                <span class="tag">#Swiper</span>
+                                            </div>
+                                            <button type="button" class="btn">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="40"
+                                                    height="40"
+                                                    viewBox="0 0 40 40"
+                                                    class="icon"
+                                                >
+                                                    <path
+                                                        d="M14.5107 25.48L24.9217 15.0691"
+                                                        stroke-linecap="square"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                    <path
+                                                        d="M14.5107 14.522H25.4696V25.4809"
+                                                        stroke-linecap="square"
+                                                    ></path>
+                                                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item">
+                                <a href="https://phs-developer.github.io/incheon/" target="_blank">
+                                    <div class="img-group">
+                                        <img src="./assets/images/incheon3.jpg" alt class="img" />
+                                    </div>
+                                    <div class="info-group">
+                                        <div class="content1">
+                                            <h3 class="title">인천시청</h3>
+                                            <p class="desc">
+                                                키보드 접근이 가능하도록 접근성에 중점을 두고 클론코딩한 사이트
+                                            </p>
+                                        </div>
+                                        <div class="content2">
+                                            <div class="tag-box">
+                                                <span class="tag kr">#시멘틱웹</span>
+                                                <span class="tag kr">#웹접근성</span>
+                                                <span class="tag">#Swiper</span>
+                                            </div>
+                                            <button type="button" class="btn">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="40"
+                                                    height="40"
+                                                    viewBox="0 0 40 40"
+                                                    class="icon"
+                                                >
+                                                    <path
+                                                        d="M14.5107 25.48L24.9217 15.0691"
+                                                        stroke-linecap="square"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                    <path
+                                                        d="M14.5107 14.522H25.4696V25.4809"
+                                                        stroke-linecap="square"
+                                                    ></path>
+                                                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item">
+                                <a href="https://phs-developer.github.io/naver/" target="_blank">
+                                    <div class="img-group">
+                                        <img src="./assets/images/naver.gif" alt class="img" />
+                                    </div>
+                                    <div class="info-group">
+                                        <div class="content1">
+                                            <h3 class="title">네이버</h3>
+                                            <p class="desc">
+                                                IR기법, WAI-ARIA를 통해 접근성에 초점을 둔 네이버 클론코딩 사이트
+                                            </p>
+                                        </div>
+                                        <div class="content2">
+                                            <div class="tag-box">
+                                                <span class="tag">#IR/IS</span>
+                                                <span class="tag">#WAI-ARIA</span>
+                                                <span class="tag">#Scss</span>
+                                            </div>
+                                            <button type="button" class="btn">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="40"
+                                                    height="40"
+                                                    viewBox="0 0 40 40"
+                                                    class="icon"
+                                                >
+                                                    <path
+                                                        d="M14.5107 25.48L24.9217 15.0691"
+                                                        stroke-linecap="square"
+                                                        stroke-linejoin="round"
+                                                    ></path>
+                                                    <path
+                                                        d="M14.5107 14.522H25.4696V25.4809"
+                                                        stroke-linecap="square"
+                                                    ></path>
+                                                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="sc-about">
+                    <div class="inner">
+                        <div class="group-title">
+                            <h2 class="title">WHO I AM</h2>
+                        </div>
+                        <div class="group-intro">
+                            <p class="text">
+                                <span>
+                                    <em>꼼꼼함과 끈기</em>를 바탕으로 작업에 임하는 퍼블리셔입니다.<br />
+                                    개발자 과정을 수료한 경험을 통해 다양한 기술 학습에 익숙하며, 새로운 기술 습득을
+                                    두려워하지 않습니다. 빠르게 변화하는 트렌드에 맞춰 적극적이고 지속적으로 신규 기술을
+                                    공부하여 적용할 수 있는 퍼블리셔가 되겠습니다.
+                                </span>
+                                <span>
+                                    다수의 사용자가 편리하게 이용 가능한 사이트를 제공하는 것이 목표입니다.<br />
+                                    이를 위해, 성능을 고려한 반응형 웹을 통해 유연한 사이트 경험을 제공하고 시맨틱 태그
+                                    사용 및 체계적인 마크업 구조를 통해 SEO에 도움이 되어 실현 가능한 목표가 되도록
+                                    노력하겠습니다.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./assets/images/star.svg" alt class="obj" />
+                </section>
+            </main>
+            <footer id="footer">
+                <div class="inner">
+                    <div class="link-wrap">
+                        <a href="https://velog.io/@phs970824/posts" class="link" target="_blank">
+                            <em class="text">velog</em>
+                            <svg viewBox="0 0 278 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                <path
+                                    d="M1 31L277 31"
+                                    stroke="#0500e8"
+                                    stroke-linecap="round"
+                                    vector-effect="non-scaling-stroke"
+                                    opacity="1"
+                                    stroke-width="1.5px"
+                                ></path>
+                                <path
+                                    d="M254 61L277 31L254 0.999999"
+                                    stroke="#0500e8"
+                                    stroke-linecap="round"
+                                    vector-effect="non-scaling-stroke"
+                                    opacity="1"
+                                    stroke-width="1.5px"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="link-wrap">
+                        <a
+                            href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=phs970824@gmail.com"
+                            class="link"
+                            target="_blank"
+                        >
+                            <em class="text">MAIL</em>
+                            <svg viewBox="0 0 278 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                <path
+                                    d="M1 31L277 31"
+                                    stroke="#0500e8"
+                                    stroke-linecap="round"
+                                    vector-effect="non-scaling-stroke"
+                                    opacity="1"
+                                    stroke-width="1.5px"
+                                ></path>
+                                <path
+                                    d="M254 61L277 31L254 0.999999"
+                                    stroke="#0500e8"
+                                    stroke-linecap="round"
+                                    vector-effect="non-scaling-stroke"
+                                    opacity="1"
+                                    stroke-width="1.5px"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="link-wrap">
+                        <a href="tel:010-3450-1944" class="link">
+                            <em class="text">PHONE</em>
+                            <svg viewBox="0 0 278 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                <path
+                                    d="M1 31L277 31"
+                                    stroke="#0500e8"
+                                    stroke-linecap="round"
+                                    vector-effect="non-scaling-stroke"
+                                    opacity="1"
+                                    stroke-width="1.5px"
+                                ></path>
+                                <path
+                                    d="M254 61L277 31L254 0.999999"
+                                    stroke="#0500e8"
+                                    stroke-linecap="round"
+                                    vector-effect="non-scaling-stroke"
+                                    opacity="1"
+                                    stroke-width="1.5px"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <small class="copy">© 2024 BY PARKHEESOON</small>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

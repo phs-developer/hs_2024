@@ -1,0 +1,330 @@
+#wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.fixed {
+    pointer-events: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    [class*="left"],
+    [class*="right"] {
+        position: fixed;
+        line-height: 1;
+        z-index: 100;
+        &.left1 {
+            left: 30px;
+            top: 50%;
+            transform: rotate(-90deg) translateX(-50%);
+            transform-origin: top left;
+        }
+        &.right1 {
+            right: 30px;
+            top: 50%;
+            transform: rotate(90deg) translateX(50%);
+            transform-origin: top right;
+        }
+        &.left2 {
+            left: 30px;
+            bottom: 30px;
+        }
+        &.right2 {
+            right: 30px;
+            bottom: 30px;
+        }
+        @include tablet() {
+            &.left1,
+            &.left2 {
+                left: 15px;
+            }
+            &.right1,
+            &.right2 {
+                right: 15px;
+            }
+        }
+        @include mobile() {
+            display: none;
+        }
+    }
+}
+
+#sc-intro {
+    height: 100vh;
+    margin-bottom: 11vw;
+    .inner {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        background: #68acff;
+        border-radius: 20px;
+        font-size: clamp(7rem, 10vw, 13rem);
+        .title {
+            position: relative;
+            padding-bottom: 7%;
+            .smile {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1em;
+                height: 1em;
+                transform: translate(100%, -50%);
+                @include mobile() {
+                    transform: translate(80%, -50%);
+                }
+            }
+            .text {
+                display: block;
+                width: max-content;
+                font-family: "Aeoniik", sans-serif;
+                font-weight: 400;
+                line-height: 1;
+                font-size: 1em;
+                font-weight: 700;
+                color: #000;
+                &:first-of-type {
+                    font-size: 0.8em;
+                    color: #f8f8ff;
+                }
+            }
+            @include pc() {
+                padding-bottom: 15%;
+            }
+        }
+        @include pc() {
+            font-size: clamp(3rem, 12vw, 10rem);
+        }
+        @include mobile() {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @include pc() {
+        margin-bottom: 50px;
+    }
+}
+
+#sc-work {
+    padding-bottom: 240px;
+    .work-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        .work-item {
+            width: 100%;
+            height: 28vw;
+            padding-top: 30px;
+            border-top: var(--border);
+            a {
+                display: flex;
+                gap: 2vw;
+                height: 100%;
+            }
+            .img-group {
+                flex: 1;
+                border-radius: 20px;
+                overflow: hidden;
+                clip-path: inset(0% 100% 0% 0% round 20px);
+                transition: clip-path 0.8s;
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                    transition: transform 0.4s;
+                    will-change: transform;
+                }
+            }
+            .info-group {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 25%;
+                height: 100%;
+                padding: 1.25rem 0;
+                transform: translateY(10%);
+                opacity: 0;
+                transition: transform 0.8s, opacity 0.8s;
+                .content1 {
+                    transition: color 0.2s;
+                    .title {
+                        width: 80%;
+                        font-size: clamp(1.5rem, 2.5vw, 5rem);
+                        font-weight: bold;
+                        line-height: 1;
+                        letter-spacing: -0.1rem;
+                        @include pc() {
+                            font-size: clamp(1.5rem, 3.5vw, 4rem);
+                        }
+                        @include mobile() {
+                            font-size: clamp(2rem, 8vw, 4rem);
+                        }
+                    }
+                    .desc {
+                        margin-top: 0.5rem;
+                        font-weight: 500;
+                    }
+                }
+                .content2 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    .tag-box {
+                        .tag {
+                            display: block;
+                            font-size: clamp(1rem, 1vw, 3rem);
+                            line-height: 1.2;
+                            &.kr {
+                                font-size: clamp(1rem, 0.9vw, 3rem);
+                            }
+                        }
+                    }
+                    .btn {
+                        .icon {
+                            fill: transparent;
+                            margin-left: auto;
+                            border-radius: 50%;
+                            transition: background 0.3s;
+                            background: currentColor;
+                            path {
+                                stroke: #fff;
+                                transition: stroke 0.3s;
+                            }
+                            rect {
+                                stroke: currentColor;
+                                transition: stroke 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(1) {
+                border: none;
+            }
+            &:nth-child(6) {
+                .img-group {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .img {
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+            }
+            &.on {
+                a {
+                    .img-group {
+                        clip-path: inset(0% 0% 0% 0% round 20px);
+                    }
+                    .info-group {
+                        transform: translateY(0%);
+                        opacity: 1;
+                    }
+                    &:hover {
+                        .img-group .img {
+                            transform: scale(1.1);
+                        }
+                        .info-group {
+                            color: var(--ThirdColor);
+                            .btn .icon {
+                                background: var(--ThirdColor);
+                                path {
+                                    stroke: #fff;
+                                }
+                                rect {
+                                    stroke: var(--ThirdColor);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include pc {
+            .work-item {
+                height: 40vw;
+            }
+        }
+        @include tablet {
+            .work-item {
+                height: 70vw;
+                a {
+                    flex-direction: column;
+                }
+                .info-group {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        @include mobile() {
+            .work-item {
+                height: 80vh;
+            }
+        }
+    }
+}
+
+#sc-about {
+    position: relative;
+    .inner {
+        @include pc() {
+            padding-bottom: 15vw;
+        }
+        @include mobile() {
+            padding-bottom: 25vw;
+        }
+    }
+    .group-intro {
+        padding-top: 30px;
+        padding-bottom: 12vw;
+        .text {
+            position: relative;
+            width: 70%;
+            font-size: 1.5rem;
+            color: #000;
+            z-index: 13;
+            span {
+                display: block;
+                transform: translateY(70%);
+                opacity: 0;
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+            }
+            @include pc() {
+                width: 90%;
+            }
+            @include tablet() {
+                width: 100%;
+                font-size: 1.3rem;
+            }
+            @include mobile() {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .obj {
+        position: absolute;
+        top: -15%;
+        right: 5%;
+        height: 10vw;
+        z-index: 10;
+    }
+    &.active {
+        .group-intro {
+            .text span {
+                opacity: 1;
+                transform: translateY(0%);
+                will-change: transform, opacity;
+                transition: transform 0.7s, opacity 0.7s;
+                &:nth-child(1) {
+                    transition-delay: 0.3s;
+                }
+                &:nth-child(2) {
+                    transition-delay: 0.6s;
+                }
+            }
+        }
+    }
+}
