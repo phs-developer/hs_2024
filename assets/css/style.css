@@ -764,21 +764,6 @@ section.active .group-title::after {
 #sc-work .work-list .work-item:nth-child(1) {
   border: none;
 }
-#sc-work .work-list .work-item:nth-child(6) .img-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#sc-work .work-list .work-item:nth-child(6) .img-group .img {
-  width: 80%;
-  height: auto;
-}
 #sc-work .work-list .work-item.on a .img-group {
   -webkit-clip-path: inset(0% 0% 0% 0% round 20px);
           clip-path: inset(0% 0% 0% 0% round 20px);

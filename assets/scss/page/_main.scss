@@ -200,17 +200,6 @@
             &:nth-child(1) {
                 border: none;
             }
-            &:nth-child(6) {
-                .img-group {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .img {
-                        width: 80%;
-                        height: auto;
-                    }
-                }
-            }
             &.on {
                 a {
                     .img-group {
